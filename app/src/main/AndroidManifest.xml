@@ -16,6 +16,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:theme="@style/AppTheme"
+            android:name=".SobreActivity"
+            android:label="Sobre">
+        </activity>
+        <activity
+            android:theme="@style/AppTheme"
+            android:name=".IniciarActivity"
+            android:label="Iniciar">
+        </activity>
+        <activity
+            android:theme="@style/AppTheme"
+            android:name=".IniciarActivity2"
+            android:label="Iniciar">
+        </activity>
     </application>
 
 </manifest>
