@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@drawable/grad_bg"
+    android:label="Sobre" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/ls"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:maxWidth="300dp"
+        android:maxHeight="200dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O SimplexAF é o resultado de um projeto desenvolvido por um grupo de estudantes da Universidade Federal do Ceará. Seu objetivo é auxiliar a tomada de decisões no ramo da agricultura familiar, oferecendo assistência ao pequeno agricultor. Para isso, o aplicativo utiliza fundamentos de programação linear, fazendo uso do algoritmo Simplex e de técnicas de pós-otimização."
+        android:id="@+id/textView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dener Silva Miranda\nFelipe Z. R. Saraiva\nMaria Isabel V. Lima"
+        android:id="@+id/textView4"
+        android:gravity="center"
+        android:layout_marginTop="59dp"
+        android:textStyle="italic"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
