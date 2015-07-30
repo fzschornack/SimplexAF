@@ -1,19 +1,23 @@
 package br.com.fattymeerkats.simplexaf;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 
-
-public class MainActivity extends ActionBarActivity {
+/**
+ * Created by Isabel on 18/07/15.
+ */
+public class IniciarActivity extends ActionBarActivity {
+    EditText num_var, num_rest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_iniciar);
     }
 
     @Override
@@ -38,13 +42,16 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void clickSobre (View view){
-        Intent i = new Intent(MainActivity.this, SobreActivity.class);
-        startActivity(i);
-    }
+    public void clickProx (View view) {
+        num_var = (EditText)findViewById(R.id.et_var);
+        num_rest = (EditText)findViewById(R.id.et_rest);
 
-    public void clickIniciar (View view){
-        Intent i = new Intent(MainActivity.this, IniciarActivity.class);
+        //num_var.getText().toString();
+        //num_rest.getText().toString();
+
+        Intent i = new Intent(getApplicationContext(), IniciarActivity2.class);
+        i.putExtra("var",num_var.getText().toString());
+        i.putExtra("rest", num_rest.getText().toString());
         startActivity(i);
     }
 }
